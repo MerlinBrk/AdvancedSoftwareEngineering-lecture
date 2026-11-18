@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Encoding & Sprache ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+% --- Layout ---
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{parskip}
+
+% --- Mathe, Grafiken, Tabellen ---
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% --- Code-Listings ---
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{teal},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=single,
+  breaklines=true,
+  showstringspaces=false
+}
+
+% --- Links (zuletzt laden) ---
+\usepackage[hidelinks]{hyperref}
+
+\title{Advanced Software Engineering}
+\author{Merlin Bürkle, Tom Schneider}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+Hier beginnt der Text.
+
+\subsection{Beispiel: Formel}
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\subsection{Beispiel: Tabelle}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lr}
+    \toprule
+    Spalte A & Spalte B \\
+    \midrule
+    Wert 1 & 42 \\
+    Wert 2 & 23 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Beispieltabelle}
+\end{table}
+
+\subsection{Beispiel: Code}
+\begin{lstlisting}[language=Java]
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+\end{lstlisting}
+
+\end{document}
